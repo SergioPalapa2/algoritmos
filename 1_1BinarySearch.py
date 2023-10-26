@@ -7,15 +7,21 @@
 
 #Nota: La busqueda binaria solo funciona cuando la lista esta ordenada
 
+
+
 #Ejemplo
 def binary_search(list, item):
+    #-primera y ultima posicion. Mantienen delimitada la lista
     low=0
     high=len(list)-1
 
+    
     while low <= high:
+        #-posicionamiento en la mitad de la lista
         mid=(low+high)//2
         guess=list[mid]
 
+        #-comparación  
         if guess == item:
             return mid
         if guess > item:
@@ -26,7 +32,11 @@ def binary_search(list, item):
 
 
 lista=["1","3","5","7","9"]
-print(binary_search(lista,"7"))
+item = "7"
+print("Buscando en: ",lista)
+print("Buscar: ", item)
+
+print("Posicion:",binary_search(lista,item))
 
 
 
