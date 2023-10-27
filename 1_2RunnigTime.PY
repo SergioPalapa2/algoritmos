@@ -1,5 +1,5 @@
-import matplotlib.pyplot as plt
-
+import matplotlib.pyplot as grafico
+import math as matematico
 
 
 #RUNNING TIME
@@ -23,10 +23,22 @@ print("- O(n * log n)   ->Busqueda rapida(quicksort)")
 print("- O(n^2)         ->Busqueda lenta (selection sort)")
 print("- O(n!)          ->(traveling salesperson)")
 
-# #Graficas ejemplpo
-# xi = [0,1,2,3,4,5,6]
-# yi = [0,1,4,9,16,25,36]
-# plt.plot(xi,yi)
-# plt.show()
+# #Graficas ejemplo logaritmos
+log16=matematico.log(1,10)
+log256=matematico.log(2,10)
+log1024=matematico.log(3,10)
+
+xi = [0,5,10]
+yi = [log16,log256,log1024]
+grafico.plot(xi,yi)
+grafico.show()
+
+
+
+
+
+
+
+
 
 
