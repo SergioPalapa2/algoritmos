@@ -30,3 +30,6 @@ def fact(x):
         return x*fact(x-1)
     
 print("Factorial de 5 es",fact(5))
+
+#Cada llamado de funcion se puede visualizar como un elemento apilado que tiene que resolverse
+#La recursion puede tomar mucha memoria para almacenar el stack
